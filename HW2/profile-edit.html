@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ProfileEditPage</title>
+</head>
+<body>
+<h1>Profile edit page</h1>
+<form action="#" method="post">
+    <fieldset>
+        <legend>Basic info</legend>
+        <p>
+            <label for="id">ID</label>
+            <input type="text" id="id" value="725" required autofocus>
+        </p>
+        <p>
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" required>
+        </p>
+        <p>
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" required>
+        </p>
+        <p>
+            <label for="password">Password</label>
+            <input type="password" id="password" value="0123456789" required>
+        </p>
+        <p>
+            <label for="phone">Phone</label>
+            <input type="text" id="phone" maxlength="12" placeholder="380" required>
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="myemail@placeholder.com" required>
+        </p>
+        <p>
+            <input type="checkbox" id="checkbox"> Keep my email addres privat <br>
+            We'll remove your public profile email and use 1978331+username@users.noreply.localhost
+        </p>
+        <p>
+            <label for="DOB">DOB</label>
+            <input type="date" id="DOB" required>
+        </p>
+        <p>
+            <label for="blog_url">Blog url</label>
+            <input type="text" id="blog_url" placeholder="http://">
+        </p>
+        <p>
+            <label for="about_me">About me</label>
+            <textarea id="about_me" name="about_me" rows="5" cols="30"></textarea>
+        </p>
+        <p>
+            <label for="picture">Profile picture</label>
+            <input type="file" id="picture">
+        </p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Professional info</legend>
+        <p>
+            <label for="desire">Desire to study</label>
+            <input type="range" id="desire" min="0" max="100" step="1" value="70">
+        </p>
+        <p>
+            <label for="experience">Experience</label>
+            <input type="number" id="experience" min="1" max="50" step="1" value="3"> years
+        </p>
+        <p>
+            Development Experience
+        </p>
+        <p>
+            <input type="radio" id="Learning_to_Program" name="development_experience" value="Learning_to_Program">
+            <label for="Learning_to_Program">Learning to Program</label><br>
+            <input type="radio" id="Junior_Developer" name="development_experience" value="Junior_Developer" checked>
+            <label for="Junior_Developer">Junior Developer</label><br>
+            <input type="radio" id="Mid-Level_Developer" name="development_experience" value="Mid-Level_Developer">
+            <label for="Mid-Level_Developer">Mid-Level Developer</label><br>
+            <input type="radio" id="Senior_Developer" name="development_experience" value="Senior_Developer">
+            <label for="Senior_Developer">Senior Developer</label><br>
+        </p>
+        <p>
+            <label for="Country">Country</label>
+            <input list="countries" id="Country" placeholder=" - Choose Your Country -" required>
+            <datalist id="countries">
+                <option>Ukraine</option>
+                <option>USA</option>
+                <option>Thailand</option>
+                <option>Spain</option>
+            </datalist>
+        </p>
+        <p>
+            Skills <input type="checkbox" id="html" checked>
+            <label for="html">HTML</label><br>
+            <input type="checkbox" id="css">
+            <label for="css">CSS</label><br>
+            <input type="checkbox" id="javascript">
+            <label for="javascript">JavaScript</label><br>
+            <input type="checkbox" id="r">
+            <label for="r">R</label><br>
+            <input type="checkbox" id="scala">
+            <label for="scala">Scala</label><br>
+            <input type="checkbox" id="haskell">
+            <label for="haskell">Haskell</label><br>
+        </p>
+    </fieldset>
+    <p>
+        <input type="reset" value="Cancel">&#160<input type="submit" value="Submit">
+    </p>
+</form>
+</body>
+</html>
