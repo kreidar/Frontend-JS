@@ -6,107 +6,138 @@
 </head>
 <body>
 <h1>Profile edit page</h1>
-<form action="#" method="post">
+<form action="https://postman-echo.com/post" method="post">
     <fieldset>
         <legend>Basic info</legend>
-        <input type="hidden" name="Profile_edit _page" value="new_user">
-        <p>
-            <label for="id">ID</label>
-            <input type="text" id="id" value="725" required autofocus>
-        </p>
-        <p>
-            <label for="first_name">First Name</label>
-            <input type="text" id="first_name" required>
-        </p>
-        <p>
-            <label for="last_name">Last Name</label>
-            <input type="text" id="last_name" required>
-        </p>
-        <p>
-            <label for="password">Password</label>
-            <input type="password" id="password" value="0123456789" required>
-        </p>
-        <p>
-            <label for="phone">Phone</label>
-            <input type="text" id="phone" maxlength="12" placeholder="380" required>
-        </p>
-        <p>
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="myemail@placeholder.com" required>
-        </p>
-        <p>
-            <input type="checkbox" id="checkbox"> Keep my email addres privat <br>
-            We'll remove your public profile email and use 1978331+username@users.noreply.localhost
-        </p>
-        <p>
-            <label for="DOB">DOB</label>
-            <input type="date" id="DOB" required>
-        </p>
-        <p>
-            <label for="blog_url">Blog url</label>
-            <input type="text" id="blog_url" placeholder="http://">
-        </p>
-        <p>
-            <label for="about_me">About me</label>
-            <textarea id="about_me" name="about_me" rows="5" cols="30"></textarea>
-        </p>
-        <p>
-            <label for="picture">Profile picture</label>
-            <input type="file" id="picture">
-        </p>
+        <input type="hidden" name="profile-edit-page" value="new-user">
+        <ul>
+            <li>
+                <label for="id">ID</label>
+                <input type="text" id="id" value="725" disabled>
+            </li>
+            <li>
+                <label for="first_name">First Name</label>
+                <input type="text" id="first_name" required autofocus>
+            </li>
+            <li>
+                <label for="last_name">Last Name</label>
+                <input type="text" id="last_name" required>
+            </li>
+            <li>
+                <label for="password">Password</label>
+                <input type="password" id="password" required>
+            </li>
+            <li>
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" maxlength="12" placeholder="380" required>
+            </li>
+            <li>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="myemail@placeholder.com" required>
+            </li>
+            <li>
+                <input type="checkbox" id="checkbox"> Keep my email addres privat <br>
+                We'll remove your public profile email and use 1978331+username@users.noreply.localhost
+            </li>
+            <li>
+                <label for="DOB">DOB</label>
+                <input type="date" id="DOB" required>
+            </li>
+            <li>
+                <label for="blog_url">Blog url</label>
+                <input type="url" id="blog_url" placeholder="http://">
+            </li>
+            <li>
+                <label for="about_me">About me</label>
+                <textarea id="about_me" name="about_me" rows="5" cols="30"></textarea>
+            </li>
+            <li>
+                <label for="picture">Profile picture</label>
+                <input type="file" id="picture">
+            </li>
+        </ul>
     </fieldset>
     <br>
     <fieldset>
         <legend>Professional info</legend>
-        <p>
-            <label for="desire">Desire to study</label>
-            <input type="range" id="desire" min="0" max="100" step="1" value="70">
-        </p>
-        <p>
-            <label for="experience">Experience</label>
-            <input type="number" id="experience" min="1" max="50" step="1" value="3"> years
-        </p>
-        <p>
-            Development Experience
-        </p>
-        <p>
-            <input type="radio" id="Learning_to_Program" name="development_experience" value="Learning_to_Program">
-            <label for="Learning_to_Program">Learning to Program</label><br>
-            <input type="radio" id="Junior_Developer" name="development_experience" value="Junior_Developer" checked>
-            <label for="Junior_Developer">Junior Developer</label><br>
-            <input type="radio" id="Mid-Level_Developer" name="development_experience" value="Mid-Level_Developer">
-            <label for="Mid-Level_Developer">Mid-Level Developer</label><br>
-            <input type="radio" id="Senior_Developer" name="development_experience" value="Senior_Developer">
-            <label for="Senior_Developer">Senior Developer</label><br>
-        </p>
-        <p>
-            <label for="Country">Country</label>
-            <input list="countries" id="Country" placeholder=" - Choose Your Country -" required>
-            <datalist id="countries">
-                <option>Ukraine</option>
-                <option>USA</option>
-                <option>Thailand</option>
-                <option>Spain</option>
-            </datalist>
-        </p>
-        <p>
-            Skills <input type="checkbox" id="html" checked>
-            <label for="html">HTML</label><br>
-            <input type="checkbox" id="css">
-            <label for="css">CSS</label><br>
-            <input type="checkbox" id="javascript">
-            <label for="javascript">JavaScript</label><br>
-            <input type="checkbox" id="r">
-            <label for="r">R</label><br>
-            <input type="checkbox" id="scala">
-            <label for="scala">Scala</label><br>
-            <input type="checkbox" id="haskell">
-            <label for="haskell">Haskell</label><br>
-        </p>
+        <ul>
+            <li>
+                <label for="desire">Desire to study</label>
+                <input type="range" id="desire" min="0" max="100" step="1" value="70">
+            </li>
+            <li>
+                <label for="experience">Experience</label>
+                <input type="number" id="experience" min="1" max="50" step="1" value="3"> years
+            </li>
+            <li>
+                <p>Development Experience</p>
+            </li>
+            <ul>
+                <li>
+                    <input type="radio" id="learning-to-program" name="dev-experience"
+                           value="learning-to-program">
+                    <label for="learning-to-program">Learning to Program</label><br>
+                </li>
+                <li>
+                    <input type="radio" id="junior-developer" name="dev-experience" value="junior-developer"
+                           checked>
+                    <label for="junior-developer">Junior Developer</label><br>
+                </li>
+                <li>
+                    <input type="radio" id="mid-level-developer" name="dev-experience"
+                           value="mid-level-developer">
+                    <label for="mid-level-developer">Mid-Level Developer</label><br>
+                </li>
+                <li>
+                    <input type="radio" id="senior-developer" name="dev-experience" value="senior-developer">
+                    <label for="senior-developer">Senior Developer</label><br>
+                </li>
+            </ul>
+            <li>
+                <label for="country">Country</label>
+                <select id="country" name="country">
+                    <option disabled selected> - Choose Your Country -</option>
+                    <option value="UA">Ukraine</option>
+                    <option disabled>------------------------</option>
+                    <option value="US">USA</option>
+                    <option value="TL">Thailand</option>
+                    <option value="SP">Spain</option>
+                </select>
+            </li>
+            <li>
+                <p>Skills</p>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="html" name="skills" checked>
+                        <label for="html">HTML</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="css" name="skills">
+                        <label for="css">CSS</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="javascript" name="skills">
+                        <label for="javascript">JavaScript</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="r" name="skills">
+                        <label for="r">R</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="scala" name="skills">
+                        <label for="scala">Scala</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="haskell" name="skills">
+                        <label for="haskell">Haskell</label>
+                    </li>
+                </ul>
+            </li>
+        </ul>
     </fieldset>
-    <p>
-        <input type="reset" value="Cancel">&#160<input type="submit" value="Submit">
-    </p>
+    <div>
+        <input type="reset" value="Cancel"> <input type="submit" value="Submit">
+    </div>
 </form>
 </body>
 </html>
