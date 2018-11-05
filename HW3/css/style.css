@@ -10,11 +10,12 @@ body {
 header {
     background-image: linear-gradient(to left, #bf1e2e, #f1592a);
     height: 76px;
+    position: relative;
 }
 
 .container {
     box-sizing: border-box;
-    max-width: 930px;
+    max-width: 1024px;
     width: 100%;
     display: flex;
 }
@@ -57,10 +58,72 @@ header {
     text-transform: uppercase;
     font-size: 12px;
     border: none;
-    background: #bf1e2e;
+    background: none;
     color: #fff;
 }
 
 .lang option {
-    background: #bf1e2e;
+    color: #2a2a2a;
+}
+
+.slider {
+    position: relative;
+}
+
+.rozklad {
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    margin-top: -120px;
+}
+
+.events {
+    background: url("../img/pagination.png");
+    width: 92px;
+    height: 93px;
+}
+
+.day {
+    font-size: 16.5px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.date {
+    font-size: 44px;
+    color: #ffffff;
+}
+
+.month {
+    text-transform: uppercase;
+    color: #7d7c7c;
+    font-size: 13px;
+}
+
+.events-selected {
+    background: url("../img/pagination-active.png");
+    width: 556px;
+    height: 93px;
+    display: flex;
+}
+
+.events-selected-day {
+    margin-left: 20px;
+}
+
+.event-about {
+    text-align: left;
+    margin-left: -170px;
+    margin-top: 5px;
+}
+
+.event-name {
+    color: white;
+    font-size: 27.5px;
+
+}
+
+.event-description {
+    margin-top: 10px;
+    font-size: 13px;
+    color: white;
 }

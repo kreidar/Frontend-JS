@@ -25,71 +25,57 @@
                 <li><a href="#">фестивалі</a></li>
             </ul>
         </nav>
-        <select class="lang">
+        <label for="lang"></label>
+        <select class="lang" name="lang" id="lang">
             <option value="UKR"><a href="#">Укр</a></option>
             <option value="RUS"><a href="#">Рус</a></option>
             <option value="ENG"><a href="#">Eng</a></option>
         </select>
     </div>
 </header>
-<section class="container">
-    <ul>
+<section class="slider">
+    <img src="img/sad-getsymanskyi-logo.jpg" alt="Афіша вистави Сад гетсиманський" width="100%">
+    <ul class="rozklad container">
         <li>
-            <a href="#">
-                <img src="img/pagination.png" alt="pagination">
-                <div>
-                    <div>Нд</div>
-                    <div>21</div>
-                    <div>лютого</div>
-                </div>
-            </a>
+            <div class="events">
+                <div class="day">Нд</div>
+                <div class="date">21</div>
+                <div class="month">лютого</div>
+            </div>
         </li>
         <li>
-            <a href="#">
-                <img src="img/pagination.png" alt="pagination">
-                <div>
-                    <div>Пн</div>
-                    <div>22</div>
-                    <div>лютого</div>
-                </div>
-            </a>
+            <div class="events">
+                <div class="day">Пн</div>
+                <div class="date">22</div>
+                <div class="month">лютого</div>
+            </div>
         </li>
         <li>
-            <a href="#">
-                <img src="img/pagination-active.png" alt="pagination-active">
-                <div>
-                    <div>Пн</div>
-                    <div>22</div>
-                    <div>лютого</div>
+            <div class="events-selected">
+                <div class="events-selected-day">
+                    <div class="day">Пн</div>
+                    <div class="date">22</div>
+                    <div class="month">лютого</div>
                 </div>
-            </a>
-            <div>
-                <h3>Сад гетсиманський</h3>
-                <div>
-                    <p>Народна трагедія на 2 дії<br>
-                        Тривалість вистави 2 год 20 хв.</p>
+                <div class="event-about">
+                    <div class="event-name">Сад гетсиманський</div>
+                    <div class="event-description">Народна трагедія на 2 дії<br>Тривалість вистави 2 год 20 хв.</div>
                 </div>
             </div>
         </li>
         <li>
-            <a href="#">
-                <img src="img/pagination.png" alt="pagination">
-                <div>
-                    <div>Чт</div>
-                    <div>25</div>
-                    <div>лютого</div>
-                </div>
-            </a>
+            <div class="events">
+                <div class="day">Чт</div>
+                <div class="date">25</div>
+                <div class="month">лютого</div>
+            </div>
         </li>
         <li>
-            <a href="#">
-                <img src="img/pagination.png" alt="pagination">
-                <div>
-                    <div>Пт</div>
-                    <div>26</div>
-                    <div>лютого</div>
-                </div>
-            </a>
+            <div class="events">
+                <div class="day">Пт</div>
+                <div class="date">26</div>
+                <div class="month">лютого</div>
+            </div>
         </li>
     </ul>
 </section>
