@@ -1,6 +1,7 @@
 * {
-    border: 1px solid black;
+/*    border: 1px solid black; */
     margin: 0 auto;
+    padding: 0;
 }
 
 body {
@@ -22,7 +23,6 @@ header {
 
 .logo {
     margin: 3px auto;
-    float: left;
 }
 
 .menu-top {
@@ -40,7 +40,6 @@ header {
 }
 
 .menu-top a {
-    text-decoration: none;
     color: #fff;
     padding: 0 5px 0 5px;
 }
@@ -68,6 +67,7 @@ header {
 
 .slider {
     position: relative;
+    margin-bottom: 40px;
 }
 
 .rozklad {
@@ -119,6 +119,7 @@ header {
 .event-name {
     color: white;
     font-size: 27.5px;
+    font-weight: 100;
 
 }
 
@@ -126,4 +127,62 @@ header {
     margin-top: 10px;
     font-size: 13px;
     color: white;
+    font-weight: 100;
+}
+
+.button {
+    background-image: linear-gradient(to top, #4c4c4c, #505050);
+    width: 36px;
+    height: 36px;
+    margin: 0 4px;
+}
+
+.button:hover {
+    background-image: linear-gradient(to top, #dd492a, #e54b2b);
+}
+
+.menu {
+    list-style: none;
+    font-size: 18px;
+    font-family: Roboto-Thin, sans-serif;
+    text-transform: uppercase;
+}
+
+.menu li {
+    margin: 10px;
+}
+
+.menu a {
+    color: #363a3b;
+}
+
+.menu a:hover {
+    color: #df4a2b;
+}
+
+.photo::before {
+    background: url("../img/photoarhive.png") no-repeat;
+    width: 30px;
+    position: absolute;
+    height: 22px;
+}
+
+.main-content {
+    max-width: 484px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.right-aside {
+    width: 233px;
+}
+
+h2 {
+    color: #e14a2b;
+    font-size: 30px;
+    font-weight: 100;
+}
+
+a {
+    text-decoration: none;
 }
