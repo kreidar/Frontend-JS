@@ -160,7 +160,7 @@ header {
     color: #df4a2b;
 }
 
-.photo::before {
+.photo: {
     background: url("../img/photoarhive.png") no-repeat;
     width: 30px;
     position: absolute;
@@ -181,8 +181,58 @@ h2 {
     color: #e14a2b;
     font-size: 30px;
     font-weight: 100;
+    margin-bottom: 27px;
 }
 
 a {
     text-decoration: none;
+}
+
+.article {
+    font-family: Roboto-Ligth, sans-serif;
+    width: 482px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    margin-bottom: 28px;
+    border-radius: 5px;
+}
+
+.article-name {
+    color: #484c4d;
+    font-size: 18px;
+    font-weight: 300;
+    margin: 11px auto 0 13px;
+}
+
+.article-description {
+    padding: 13px;
+    font-size: 14px;
+    color: #878c8d;
+}
+
+.publish-date {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 13px 10px 13px;
+    font-size: 12px;
+    color: #989C9C;
+    align-items: center;
+    border-top: 1px solid #DBDBDB;
+    opacity: 0.8;
+}
+
+.eye {
+    margin-left: 357px;
+}
+
+.right-aside-block {
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3);
+}
+
+.menu-description {
+    font-size: 14px;
+    color: #484c4d;
+    margin-bottom: 38px;
+    padding: 11px;
 }
